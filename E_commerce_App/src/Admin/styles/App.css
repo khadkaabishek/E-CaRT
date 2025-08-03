@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  .sidebar .logo {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar ul li a.active {
+    font-weight: bold;
+  }
+  
+  .admin-content {
+    flex: 1;
+    padding: 30px;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+  }
+  
+  .request-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  .request-card img {
+    max-width: 300px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .buttons button {
+    margin-right: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  

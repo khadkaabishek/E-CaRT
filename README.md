@@ -10,7 +10,6 @@ This is a fully functional **E-commerce Web Application** built entirely by me a
 
 **Frontend:**
 - React + TypeScript
-- TailwindCSS for utility-first UI styling
 - Vite for lightning-fast development and bundling
 - Recharts for data visualization (Seller Analytics)
 

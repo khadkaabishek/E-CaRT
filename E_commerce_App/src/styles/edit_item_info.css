@@ -1,0 +1,65 @@
+/* EditItemInfo.css */
+
+.edit-item-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-item-form label {
+    display: block;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    color: #333;
+  }
+  
+  .edit-item-form input[type="text"],
+  .edit-item-form input[type="number"],
+  .edit-item-form input[type="file"],
+  .edit-item-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border 0.2s ease-in-out;
+  }
+  
+  .edit-item-form input[type="text"]:focus,
+  .edit-item-form input[type="number"]:focus,
+  .edit-item-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .edit-item-form textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .edit-item-form input[type="file"] {
+    padding: 5px;
+  }
+  
+  .edit-item-form button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .edit-item-form button:hover {
+    background-color: #0056b3;
+  }
+  

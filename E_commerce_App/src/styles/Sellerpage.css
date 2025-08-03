@@ -1,0 +1,47 @@
+.seller-page-wrapper {
+    height: calc(100vh - 140px); /* Subtract header and footer height */
+    overflow: hidden;
+  }
+  
+  .seller-content-wrapper {
+    display: flex;
+    height: 100%;
+  }
+  
+  .seller-left-pane {
+    flex: 1;
+    overflow-y: auto;
+    padding: 2rem;
+    background: #f8f9fa;
+  }
+  
+  .seller-right-pane {
+    width: 450px;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  .form-wrapper {
+    height: 100%;
+    overflow-y: auto;
+    padding: 2rem;
+  }
+  
+  /* Custom scrollbar for left pane */
+  .seller-left-pane::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .seller-left-pane::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .seller-left-pane::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+  }
+  
+  .seller-left-pane::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+  }

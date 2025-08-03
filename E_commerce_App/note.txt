@@ -1,0 +1,28 @@
+
+
+🌟 Day 63 of Learning 🌟
+Today was all about refining the seller-side analytics to better understand 
+individual product performance over time. 🛍️📈 I worked on displaying clear, 
+meaningful product-wise insights using pie charts and ensured backend logic 
+stays in sync with real-time inventory data.
+
+🎯 What I worked on:
+
+1. Transformed order data to render individual product contributions in a pie
+   chart using `recharts`.
+2. Built a clean backend API (`/analyze/:id`) to serve seller-specific order 
+   analysis.
+3. Fixed the backend logic to reduce `quantityAvailable`  for each product a-
+   fter a successful order placement — keeping inventory accurate.
+4. Tweaked chart rendering for better visual clarity and more useful labeling.
+
+✅ Summary:
+
+✔️ Sellers can now see how much each product contributes to total sales.
+✔️ API returns structured and pre-processed data for direct chart integration.
+✔️ Inventory is automatically updated after each order, preventing over-selling.
+✔️ Analytics visuals are now cleaner, more intuitive, and insightful.
+
+Turning raw backend data into clear visual stories is becoming my favorite part 
+of full-stack dev! 🧠📊
+

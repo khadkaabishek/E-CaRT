@@ -1,0 +1,63 @@
+.dashboard-container {
+  padding: 2rem;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2a2a72;
+  margin-bottom: 1.5rem;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}.filter-bar {
+  display: flex;
+  gap: 16px;
+  padding: 12px 24px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ddd;
+  align-items: center;
+  overflow-x: auto; /* for responsiveness */
+}
+.price-filter {
+  background: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.price-filter label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.price-filter input {
+  width: 70px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.price-filter button {
+  padding: 6px 10px;
+  background-color: #2a2a72;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.price-filter button:hover {
+  background-color: #1d1d5f;
+}

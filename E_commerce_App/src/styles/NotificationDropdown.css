@@ -1,0 +1,94 @@
+/* Container */
+.notification-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Notification Button */
+.notification-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Badge */
+.notification-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+/* Dropdown */
+.notification-dropdown {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  width: 260px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+}
+
+/* Dropdown Header */
+.dropdown-header {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  color: #000; /* Black text */
+}
+
+/* List Items */
+.notification-dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.dropdown-item {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  color: #000; /* All text black */
+  background-color: #fff;
+  transition: background 0.2s ease-in-out;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-item p {
+  margin: 0;
+  font-size: 14px;
+  color: #000; /* Black */
+}
+
+.dropdown-item span {
+  font-size: 12px;
+  color: #444; /* Dark gray for time */
+}
+
+/* Empty Message */
+.empty-message {
+  text-align: center;
+  padding: 15px;
+  color: #000;
+  font-size: 14px;
+}

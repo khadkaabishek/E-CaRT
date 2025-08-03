@@ -1,0 +1,42 @@
+# Node dependencies - ignore all node_modules folders in all subdirectories
+**/node_modules/
+
+# Upload folders (e.g., public/uploads/, uploads/, etc.)
+**/uploads/
+**/public/uploads/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+logs/
+**/logs/
+
+# Environment variables
+.env
+.env.*  # in case you have multiple env files like .env.production
+
+# Build output (if you're compiling assets)
+dist/
+build/
+
+# IDE and editor configs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS-specific swap/lock files
+*.swp
+*.lock
+
+# Mac or Linux hidden files
+*.bak
+*~

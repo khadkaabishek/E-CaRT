@@ -1,0 +1,82 @@
+.cart-page {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .cart-left {
+    flex: 2;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .delete-btn {
+    background: transparent;
+    border: none;
+    color: red;
+    cursor: pointer;
+  }
+  
+  .cart-right {
+    flex: 1;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .add-address {
+    color: #007bff;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .order-summary p {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  
+  .voucher {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .voucher input {
+    flex: 1;
+    padding: 8px;
+  }
+  
+  .voucher button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .checkout-btn {
+    width: 100%;
+    background: #ff6f00;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .empty-cart {
+    text-align: center;
+    color: #666;
+    margin-top: 20px;
+  }
+  
