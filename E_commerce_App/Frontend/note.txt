@@ -1,0 +1,21 @@
+
+
+🌟 Day 64 of Learning 🌟
+Today was all about Dockerizing my project and tackling the various challenges that came with it. 🐳💻 Although I encountered a bunch of problems, facing them head-on made me feel more confident and skilled in managing containerized environments.
+
+🎯 What I worked on:
+
+1. Set up Docker containers to run the frontend with Vite, exposing ports and mounting volumes correctly.
+2. Troubleshot Docker crashes and learned useful commands to restart and reset containers smoothly.
+3. Configured environment variables for the containerized app to work seamlessly across different environments.
+4. Worked on optimizing the Vite config and Dockerfile for faster development and rebuilds.
+
+✅ Summary:
+
+✔️ Gained hands-on experience with Docker container lifecycle and debugging.
+✔️ Learned how to keep development environments consistent using Docker volumes and env vars.
+✔️ Improved understanding of integrating frontend tools like Vite inside Docker.
+✔️ Developed resilience by embracing and solving deployment problems directly.
+
+Overcoming these Docker challenges really boosted my confidence with devops workflows! 🚀🐋
+

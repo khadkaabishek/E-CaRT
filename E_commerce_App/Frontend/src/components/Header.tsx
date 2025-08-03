@@ -20,13 +20,15 @@ const Header: React.FC = () => {
   const user = userJSON ? JSON.parse(userJSON) : null;
   const navigate = useNavigate();
   const location = useLocation();
-
+  const imageString= user?.image ? `${user.image}` : "/images.png";
+  console.log(imageString);
   const [cartItems, setCartItems] = useState<CartItemType[]>([]);
   const [totalQuantity, setTotalQuantity] = useState<number>(0);
 
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const profileRef = useRef<HTMLDivElement>(null);
   const [searchQuery, setSearchQuery] = useState("");
+ 
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -179,7 +181,7 @@ const Header: React.FC = () => {
             {token && user ? (
               <div className="profile-container" ref={profileRef}>
                 <img
-                  src={user?.image || "/images.png"}
+                  src={imageString}
                   className="user-avatar"
                   onClick={() => setIsProfileOpen(!isProfileOpen)}
                 />
