@@ -40,7 +40,7 @@ function App() {
     return () => window.removeEventListener("storage", updateAuthState);
   }, []);
   
-  const ownerId = user._id;
+  const ownerId = user?._id;
   if (loading) return <div>Loading...</div>;
 
   return (

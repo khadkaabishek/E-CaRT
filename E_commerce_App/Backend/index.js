@@ -15,7 +15,7 @@ const userRoute = require("./routes/userRoute");
 const checkOutRoute = require("./routes/checkout.js");
 const analyticsRoute = require("./routes/analytics");
 
-handleDBConnection("mongodb://127.0.0.1:27017/E_Commerce")
+handleDBConnection(process.env.MONGO_URL)
   .then(() => console.log("Mongo Connected !!"))
   .catch((err) => {
     console.log(`Error encountered : ${err}`);

@@ -1,7 +1,7 @@
 const Orders = require("../models/order");
 const Cart = require("../models/userCart");
-const MyNotification = require("../models/Notification");
-const User = require("../models/User");
+const MyNotification = require("../models/notification");
+const User = require("../models/user");
 const { JWTVerify } = require("./../middlewares/auth");
 const Order = require("../models/order");
 const Product = require("../models/Product");

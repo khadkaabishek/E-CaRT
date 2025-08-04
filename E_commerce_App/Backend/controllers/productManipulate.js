@@ -1,5 +1,5 @@
 const Product = require("../models/Product");
-const JWT_SECRET = process.env.JWT_SECRET || "your_jwt_secret";
+const JWT_SECRET = process.env.JWT_SECRET;
 const jwt = require("jsonwebtoken");
 const sellerInfo = require("../models/sellerInfo");
 const getProduct = async (req, res) => {
