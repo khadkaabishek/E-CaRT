@@ -23,7 +23,7 @@ const user = JSON.parse(localStorage.getItem("user") || "{}");
 const CartItem: React.FC<CartItemProps> = ({ item, refreshCart }) => {
   const updateQuantity = async (action: "increment" | "decrement") => {
     try {
-      await fetch(`http://localhost:5001/cart/${user._id}/update-quantity`, {
+      await fetch(`https://e-cart-q4gx.onrender.com/cart/${user._id}/update-quantity`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -39,7 +39,7 @@ const CartItem: React.FC<CartItemProps> = ({ item, refreshCart }) => {
 
   const removeFromCart = async () => {
     try {
-      await fetch(`http://localhost:5001/cart/${user._id}/remove-item`, {
+      await fetch(`https://e-cart-q4gx.onrender.com/cart/${user._id}/remove-item`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -61,7 +61,7 @@ const CartItem: React.FC<CartItemProps> = ({ item, refreshCart }) => {
       
       <div className="cart-item-image">
         <img
-          src={`http://localhost:5001/${item.product.image}`}
+          src={`https://e-cart-q4gx.onrender.com/${item.product.image}`}
           alt={item.product.name}
           className="cart-item-img"
         />

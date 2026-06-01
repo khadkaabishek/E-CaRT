@@ -3,7 +3,7 @@ import { useParams, useLocation, useNavigate } from "react-router-dom";
 import ProductReview from "./../components/productReview";
 import "./../styles/ProductDetail.css";
 
-const backendURL = "http://localhost:5001/";
+const backendURL = "https://e-cart-q4gx.onrender.com/";
 
 type Product = {
   _id: string;

@@ -15,7 +15,7 @@ const BecomeSellerForm: React.FC = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:5001/becomeSeller/${user?.id}`,
+        `https://e-cart-q4gx.onrender.com/becomeSeller/${user?.id}`,
         {
           method: "POST",
           headers: {

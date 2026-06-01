@@ -19,7 +19,7 @@ const Dashboard: React.FC = () => {
     const getCardData = async () => {
       setError(null);
       try {
-        const response = await fetch("http://localhost:5001/api/get_item", {
+        const response = await fetch("https://e-cart-q4gx.onrender.com/api/get_item", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,

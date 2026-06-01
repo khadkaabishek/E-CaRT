@@ -30,7 +30,7 @@ const Login: React.FC<LoginProps> = ({ setIsAuthenticated }) => {
     setMessage("Logging in...");
 
     try {
-      const response = await fetch("http://localhost:5001/login", {
+      const response = await fetch("https://e-cart-q4gx.onrender.com/login", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -87,7 +87,7 @@ const Login: React.FC<LoginProps> = ({ setIsAuthenticated }) => {
   const handleForgotPasswordEmail = async () => {
     setMessage("⏳ Sending OTP...");
     try {
-      const res = await fetch("http://localhost:5001/forgot-password", {
+      const res = await fetch("https://e-cart-q4gx.onrender.com/forgot-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: resetEmail }),
@@ -108,7 +108,7 @@ const Login: React.FC<LoginProps> = ({ setIsAuthenticated }) => {
   const handleVerifyOTP = async () => {
     setMessage("⏳ Verifying OTP...");
     try {
-      const res = await fetch("http://localhost:5001/verify-reset-otp", {
+      const res = await fetch("https://e-cart-q4gx.onrender.com/verify-reset-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: resetEmail, otp }),
@@ -129,7 +129,7 @@ const Login: React.FC<LoginProps> = ({ setIsAuthenticated }) => {
   const handleResetPassword = async () => {
     setMessage("⏳ Resetting password...");
     try {
-      const res = await fetch("http://localhost:5001/reset-password", {
+      const res = await fetch("https://e-cart-q4gx.onrender.com/reset-password", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: resetEmail, newPassword }),

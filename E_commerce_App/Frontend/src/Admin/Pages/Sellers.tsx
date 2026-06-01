@@ -21,7 +21,7 @@ const Sellers: React.FC = () => {
   const [sellers, setSellers] = useState<Seller[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:5001/admin/viewSellers")
+    fetch("https://e-cart-q4gx.onrender.com/admin/viewSellers")
       .then((res) => res.json())
       .then((data) => setSellers(data))
       .catch((err) => console.error("Error fetching sellers:", err));
@@ -46,15 +46,15 @@ const Sellers: React.FC = () => {
                 <div className="doc-images">
                   <div>
                     <p>NID Front:</p>
-                    <img src={`http://localhost:5001/uploads/SellerData/${seller.sellerInfo.nidFront}`} alt="NID Front" />
+                    <img src={`https://e-cart-q4gx.onrender.com/uploads/SellerData/${seller.sellerInfo.nidFront}`} alt="NID Front" />
                   </div>
                   <div>
                     <p>NID Back:</p>
-                    <img src={`http://localhost:5001/uploads/SellerData/${seller.sellerInfo.nidBack}`} alt="NID Back" />
+                    <img src={`https://e-cart-q4gx.onrender.com/uploads/SellerData/${seller.sellerInfo.nidBack}`} alt="NID Back" />
                   </div>
                   <div>
                     <p>Address Proof:</p>
-                    <img src={`http://localhost:5001/uploads/SellerData/${seller.sellerInfo.addressProof}`} alt="Address Proof" />
+                    <img src={`https://e-cart-q4gx.onrender.com/uploads/SellerData/${seller.sellerInfo.addressProof}`} alt="Address Proof" />
                   </div>
                 </div>
               </>

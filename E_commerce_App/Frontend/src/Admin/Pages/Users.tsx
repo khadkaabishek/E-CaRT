@@ -15,7 +15,7 @@ const Users: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:5001/admin/viewUsers")
+    fetch("https://e-cart-q4gx.onrender.com/admin/viewUsers")
       .then((res) => res.json())
       .then((data) => setUsers(data))
       .catch((err) => console.error("Error fetching users:", err));

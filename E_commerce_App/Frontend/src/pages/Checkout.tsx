@@ -31,7 +31,7 @@ const Checkout: React.FC = () => {
   const fetchCart = async () => {
     if (!user?._id) return;
     try {
-      const res = await fetch(`http://localhost:5001/cart/${user._id}`, {
+      const res = await fetch(`https://e-cart-q4gx.onrender.com/cart/${user._id}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -84,7 +84,7 @@ const Checkout: React.FC = () => {
     };
 
     try {
-      const res = await fetch("http://localhost:5001/checkout/place_order", {
+      const res = await fetch("https://e-cart-q4gx.onrender.com/checkout/place_order", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

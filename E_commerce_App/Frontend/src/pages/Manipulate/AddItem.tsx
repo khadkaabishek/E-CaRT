@@ -43,7 +43,7 @@ const AddItem: React.FC = () => {
       data.append("category", formData.category);
       if (file) data.append("image", file);
 
-      const res = await fetch("http://localhost:5001/api/add_item", {
+      const res = await fetch("https://e-cart-q4gx.onrender.com/api/add_item", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,

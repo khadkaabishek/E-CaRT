@@ -49,7 +49,7 @@ const Header: React.FC = () => {
     // const id = user?.id || user?._id;
     if (user?._id || user.role === "seller") return;
     try {
-      const res = await fetch(`http://localhost:5001/cart/${user._id}`, {
+      const res = await fetch(`https://e-cart-q4gx.onrender.com/cart/${user._id}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,

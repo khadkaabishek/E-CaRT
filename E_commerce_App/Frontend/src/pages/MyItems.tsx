@@ -24,7 +24,7 @@ const MyItems: React.FC = () => {
       setError(null);
       try {
         const response = await fetch(
-          `http://localhost:5001/api/${user._id}/get-my-items`,
+          `https://e-cart-q4gx.onrender.com/api/${user._id}/get-my-items`,
           {
             method: "GET",
             headers: {

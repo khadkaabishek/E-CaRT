@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./../styles/request.css"; // 👈 Import CSS file
-const URL = 'http://localhost:5001/uploads/SellerData/'
+const URL = 'https://e-cart-q4gx.onrender.com/uploads/SellerData/'
 interface Seller {
   _id: string;
   email: string;
@@ -21,7 +21,7 @@ const SellerRequests: React.FC = () => {
   useEffect(() => {
     const fetchRequests = async () => {
       try {
-        const res = await fetch("http://localhost:5001/admin/viewRequest");
+        const res = await fetch("https://e-cart-q4gx.onrender.com/admin/viewRequest");
         const data = await res.json();
         setRequests(data);
       } catch (error) {
@@ -36,7 +36,7 @@ const SellerRequests: React.FC = () => {
 
   const handleStatusUpdate = async (id: string, status: "approved" | "rejected") => {
     try {
-      const res = await fetch(`http://localhost:5001/admin/updateRequestStatus/${id}`, {
+      const res = await fetch(`https://e-cart-q4gx.onrender.com/admin/updateRequestStatus/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

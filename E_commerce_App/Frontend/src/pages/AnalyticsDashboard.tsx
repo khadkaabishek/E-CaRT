@@ -26,7 +26,7 @@ const AnalyticsDashboard: React.FC<Props> = ({ ownerId }) => {
     const fetchAnalytics = async () => {
       try {
         const response = await axios.get<SalesData[]>(
-          `http://localhost:5001/analyze/${ownerId}`
+          `https://e-cart-q4gx.onrender.com/analyze/${ownerId}`
         );
         setAnalytics(response.data);
       } catch (err) {

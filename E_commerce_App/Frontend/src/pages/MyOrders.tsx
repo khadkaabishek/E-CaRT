@@ -44,7 +44,7 @@ const MyOrders: React.FC = () => {
   const fetchOrders = async () => {
     try {
       const res = await fetch(
-        `http://localhost:5001/checkout/my-orders/${user._id}`,
+        `https://e-cart-q4gx.onrender.com/checkout/my-orders/${user._id}`,
         {
           method: "GET",
           headers: {
@@ -75,7 +75,7 @@ const MyOrders: React.FC = () => {
   if (error) return <div className="error">{error}</div>;
   const confirmDone = async (orderId: string) => {
     try {
-      const res = await fetch(`http://localhost:5001/checkout/confirm-done/${orderId}`, {
+      const res = await fetch(`https://e-cart-q4gx.onrender.com/checkout/confirm-done/${orderId}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",

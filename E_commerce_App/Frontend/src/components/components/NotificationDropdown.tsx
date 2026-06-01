@@ -20,7 +20,7 @@ const NotificationDropdown: React.FC = () => {
 
     const getNotifications = async () => {
       try {
-        const res = await fetch("http://localhost:5001/user/getNotification", {
+        const res = await fetch("https://e-cart-q4gx.onrender.com/user/getNotification", {
           method: "GET",
           headers: {
             Authorization: `Bearer ${token}`,

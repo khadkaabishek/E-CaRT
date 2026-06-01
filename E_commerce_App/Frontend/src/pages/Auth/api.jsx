@@ -1,5 +1,5 @@
 import axios from "axios";
 const api = axios.create({
-  baseURL: "http://localhost:5001",
+  baseURL: "https://e-cart-q4gx.onrender.com",
 });
 export const googleAuth = (code) =>  api.get(`/google?code=${encodeURIComponent(code)}`);

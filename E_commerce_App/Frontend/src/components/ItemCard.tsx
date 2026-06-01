@@ -2,7 +2,7 @@ import React from "react";
 import "./../styles/ItemCard.css";
 import { useNavigate } from "react-router-dom";
 
-const backendURL = "http://localhost:5001/";
+const backendURL = "https://e-cart-q4gx.onrender.com/";
 
 interface ItemCardProps {
   prodData: {

@@ -30,7 +30,7 @@ const Signup: React.FC = () => {
     setMessage("Sending OTP to your email...");
 
     try {
-      const response = await fetch("http://localhost:5001/signup", {
+      const response = await fetch("https://e-cart-q4gx.onrender.com/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -54,7 +54,7 @@ const Signup: React.FC = () => {
     setMessage("Verifying OTP...");
 
     try {
-      const response = await fetch("http://localhost:5001/verify-otp", {
+      const response = await fetch("https://e-cart-q4gx.onrender.com/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: formData.email, otp }),
@@ -83,7 +83,7 @@ const Signup: React.FC = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5001/complete-signup", {
+      const response = await fetch("https://e-cart-q4gx.onrender.com/complete-signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

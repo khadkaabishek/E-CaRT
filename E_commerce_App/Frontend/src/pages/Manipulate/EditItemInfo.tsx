@@ -19,7 +19,7 @@ const EditItemInfo: React.FC = () => {
 
   const cartInfo = async () => {
     try {
-      const response = await fetch(`http://localhost:5001/api/get-item/${id}`, {
+      const response = await fetch(`https://e-cart-q4gx.onrender.com/api/get-item/${id}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -75,7 +75,7 @@ const EditItemInfo: React.FC = () => {
         });
       }
 
-      const response = await fetch(`http://localhost:5001/api/put_item/${id}`, {
+      const response = await fetch(`https://e-cart-q4gx.onrender.com/api/put_item/${id}`, {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${token}`,
