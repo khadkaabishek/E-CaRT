@@ -19,7 +19,7 @@ logs/
 .env.*  # in case you have multiple env files like .env.production
 
 # Build output (if you're compiling assets)
-dist/
+
 build/
 
 # IDE and editor configs
