@@ -23,7 +23,8 @@ handleDBConnection(process.env.MONGO_URL)
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin:
+      "https://6a1d78b35a4da325ce3902a5--thunderous-macaron-fd4a56.netlify.app/",
     credentials: true,
   })
 );
