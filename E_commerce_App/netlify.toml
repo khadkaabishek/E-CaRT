@@ -1,5 +1,5 @@
 [build]
-  base = "E_commerce_App/Frontend"
+  base = "Frontend"
   command = "npm run build"
   publish = "dist"
 
