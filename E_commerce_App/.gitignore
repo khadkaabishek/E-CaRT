@@ -21,6 +21,12 @@ logs/
 # Build output (if you're compiling assets)
 
 build/
+dist/
+dist
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # IDE and editor configs
 .vscode/
